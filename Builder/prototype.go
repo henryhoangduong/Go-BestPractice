@@ -15,3 +15,7 @@ func GetShirtsCloner() ShirtCloner {
 }
 
 type ShirtsCache struct{}
+
+type ItemInfoGetter interface {
+	GetInfo() string
+}
